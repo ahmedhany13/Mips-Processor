@@ -1,12 +1,8 @@
 module pc(clk,Pc,newPc);
 
 input clk;
-output [31:0] Pc;
-output [31:0] newPc;
-
-
-Pc = 32b'0;
-
+output reg [31:0] Pc;
+output reg [31:0] newPc;
 
 initial begin
     Pc = 32'b00000000000000000000000000000000;
@@ -19,3 +15,5 @@ begin
 Pc = newPc;
 
 end
+
+endmodule

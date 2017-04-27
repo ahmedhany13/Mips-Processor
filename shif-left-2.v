@@ -1,4 +1,5 @@
-module shiftLeftBy2(in,out);
+module shiftLeftBy2(clk, in, out);
+input clk;
 input [31:0] in;
 output reg [31:0] out;
 

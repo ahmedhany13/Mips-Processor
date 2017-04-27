@@ -1,7 +1,8 @@
-module ALU_controller (funct, ALUOp, ALUSignal);
-input [5:0] funct;
-input [1:0] ALUOp;
-output [3:0] ALUSignal
+module ALU_controller (clk, funct, ALUOp, ALUSignal);
+input clk;
+input  [5:0] funct;
+input  [1:0] ALUOp;
+output reg  [3:0] ALUSignal;
 
 always @ (/*funct,*/ ALUOp)
 begin

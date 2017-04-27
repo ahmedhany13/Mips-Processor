@@ -1,6 +1,9 @@
-module (in1, in2, selector, out);
-input in1,in2,selector;
-output out;
+module mux (clk, in1, in2, selector, out);
+input clk;
+input [31:0] in1 ;
+input [31:0] in2 ;
+input selector;
+output reg [31:0] out;
 
 
 always @(in1, in2) begin
