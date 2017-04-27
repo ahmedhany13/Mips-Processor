@@ -1,4 +1,4 @@
-module And (clk, In1, In2, out);
+module And_gate (clk, In1, In2, out);
 input clk;
 input  In1, In2;
 output  out;
@@ -11,8 +11,8 @@ endmodule
 
 module Add (clk, In1, In2, out);
 input clk;
-input  In1, In2;
-output  out;
+input [31:0] In1, In2;
+output [31:0] out;
 
 assign out = In1 + In2;
 

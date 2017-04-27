@@ -6,15 +6,15 @@ input [4:0]  MEM_writereg;
 input  MEM_memtoreg , MEM_pcsrc ;
 output reg [31:0] WB_aluresult , WB_memread;
 output reg [4:0] WB_writereg;
-output WB_memtoreg , WB_pcsrc;
+output reg WB_memtoreg , WB_pcsrc;
 
-always @(clk)
+always @(posedge clk)begin
   WB_aluresult = MEM_aluresult;
   WB_memread =  MEM_memread;
   WB_writereg = MEM_writereg;
   WB_memtoreg = MEM_memtoreg;
   WB_pcsrc = MEM_pcsrc;
-begin
+
 
 end
 endmodule
